@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/SemPlaatsman/Buitenbeentjes-bot/issues"
   },
-  "homepage": "https://github.com/SemPlaatsman/Buitenbeentjes-bot#readme"
+  "homepage": "https://github.com/SemPlaatsman/Buitenbeentjes-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
 }
