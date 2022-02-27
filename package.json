@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/SemPlaatsman/Buitenbeentjes-bot#readme",
   "dependencies": {
-    "discord.js": "^13.6.0"
+    "discord.js": "^12.5.3"
   }
 }
