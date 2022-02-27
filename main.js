@@ -18,6 +18,10 @@ client.once("ready", () => {
 
 client.on("message", (message) => {
   //console.log(message);
+  if (message.author.username == "ColKru") {
+    message.channel.send("Hou je mond Colin");
+    return;
+  }
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   const args = message.content.slice(prefix.length).split(/ +/);
@@ -28,8 +32,8 @@ client.on("message", (message) => {
     client.commands.get("ping").execute(message, args);
   } else if (command === "opencode") {
     client.commands.get("opencode").execute(message, args);
-  } else if (message.author.username == "Colin Kroket") {
-    message.channel.send("Cool story bro");
+  } else if (command === "marco") {
+    client.commands.get("marco").execute(message, args);
   } else {
     message.channel.send("Invalid command!");
   }
