@@ -1,6 +1,8 @@
+const config = require("./config.json");
+
 const Discord = require("discord.js");
 const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] });
-const prefix = ">";
+const prefix = config.prefix;
 const fs = require("fs");
 client.commands = new Discord.Collection();
 const commandFiles = fs
@@ -39,4 +41,4 @@ client.on("message", (message) => {
   }
 });
 
-client.login("OTQ3MjE2OTE3MzY0NjE3MzE3.YhqCfw.M1IBYUMaCJeclH8-KBKlTNxS6cs");
+client.login(config.token);
