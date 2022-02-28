@@ -34,6 +34,8 @@ client.on("message", (message) => {
     client.commands.get("ping").execute(message, args);
   } else if (command === "opencode") {
     client.commands.get("opencode").execute(message, args);
+  } else if (command === "mlp") {
+    client.commands.get("mlp").execute(message, args);
   } else if (command === "marco") {
     client.commands.get("marco").execute(message, args);
   } else {
